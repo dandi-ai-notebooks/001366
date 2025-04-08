@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 10.0,
+            "reps": [
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of DANDI:001366, including its title \"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\", its purpose (studying vessel diameter and pulsatility), key content (movies of pial vessels in mice), data collection method (imaging through thinned skull), and details about the dataset structure (two recordings with specified subjects). It explores basic metadata (subject IDs, ages, species) and provides information about the data organization. The description is clear, comprehensive and well-structured, including both the technical aspects and the scientific purpose of the dataset.",
+                    "repnum": 0
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of DANDI:001366. It includes: 1) The full title \"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\", 2) The purpose - studying vessel diameter and pulsatility in mice, 3) Key dataset contents - high-speed imaging of pial vessels, 4) Data collection method - imaging through thinned skull over MCA, 5) Subject metadata (age, species, IDs), 6) File structure (lists available NWB files), and 7) Data organization (describes imaging data characteristics). The description is clear, well-organized, and provides sufficient context for understanding the dataset's scope and purpose.",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a comprehensive description of DANDI:001366. It includes: 1) The full title \"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\", 2) The purpose of studying vessel diameter and pulsatility in mice, 3) Key dataset contents (high-speed imaging of pial vessels), 4) Specific methodology (imaging through thinned skull over MCA), 5) Data structure (shows available NWB files), 6) Subject metadata (species, age, sex), and 7) Key experimental details. The description is clear, well-organized, and provides all essential information needed to understand the dataset.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 7.333333333333333,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates solid metadata loading and exploration through multiple steps: 1) Uses DandiAPIClient to access dataset 001366 and list available assets, 2) Successfully loads an NWB file using lindi, 3) Displays key metadata fields including session description, subject ID, age, and species, 4) Extracts and displays dataset-specific information like frame rates and dimensions. However, it doesn't provide comprehensive descriptions of all available metadata fields or demonstrate exhaustive metadata exploration. Some important fields like experimental protocols or complete subject metadata are not shown.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates successful loading of the dandiset through DandiAPIClient, accessing basic metadata, and exploring multiple fields. It shows how to:\n    1. Load the dandiset using the ID \"001366\"\n    2. List available assets in the dataset\n    3. Load an NWB file and access metadata including:\n        - Session description\n        - Subject ID\n        - Subject age\n        - Subject species\n    The notebook includes explanatory markdown cells describing the dataset and its contents. However, it doesn't provide comprehensive descriptions of all available metadata fields or demonstrate working with all possible metadata.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates successful loading of the dandiset using DandiAPIClient, accessing basic metadata through both the dandiset API and NWB file. It lists available assets, loads subject information (ID, age, species), and session description. The code executes successfully with proper explanations in markdown. However, it doesn't explore all possible metadata fields or provide comprehensive field descriptions. The focus is mainly on basic metadata needed for the analysis.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates several aspects of asset handling: 1) Uses DandiAPIClient to connect and list assets, 2) Successfully prints available NWB files in the dataset, 3) Uses lindi to load a specific NWB file, 4) Accesses basic metadata like session description and subject information. However, it doesn't explore multiple asset types or provide comprehensive metadata exploration. The loading is functional but focused on a single asset type (NWB files) and basic metadata fields.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates basic to intermediate asset handling: It successfully uses DandiAPIClient to list available assets in the dataset (showing 2 NWB files), loads a specific NWB file using lindi, and accesses basic metadata (session description, subject info). However, it doesn't explore multiple asset types or provide comprehensive metadata exploration. The loading process is functional but focused on a single asset type (NWB files) with basic metadata access.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates good asset handling by: 1) Using DandiAPIClient to connect and list assets, 2) Successfully showing available NWB files in the dataset, 3) Loading a specific NWB file using LindiH5pyFile, 4) Accessing and displaying basic metadata from the loaded file (session description, subject ID, age, species). However, it doesn't explore multiple asset types or provide comprehensive metadata exploration across different assets. The focus is mainly on loading and basic access of a single NWB file.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 6.333333333333333,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully demonstrates loading an NWB file using pynwb and lindi, and accesses basic components like session description, subject information (ID, age, species), and acquisition data (Movies). It shows how to read metadata and access the main data structure, but doesn't fully explore all possible NWB components or provide a comprehensive view of the file hierarchy. The code executes with only minor warnings related to namespace versions.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully demonstrates loading an NWB file using pynwb and lindi, accesses basic metadata (session description, subject info), and shows how to access acquisition data (Movies). It shows both reading metadata and accessing actual data content (image data). However, it doesn't explore multiple NWB data structures deeply or show detailed navigation of the full NWB hierarchy. The exploration is focused mainly on the Movies acquisition and basic metadata.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully demonstrates basic NWB file handling with the following key elements:\n    1. Successfully loads an NWB file using pynwb and lindi\n    2. Accesses basic metadata (session description, subject info)\n    3. Shows how to access acquisition data (Movies)\n    4. Extracts and uses key properties from the data\n    However, it doesn't provide a comprehensive exploration of the NWB hierarchy or show multiple data structures beyond the Movies acquisition. While functional, it stays focused on basic access patterns.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates successful loading of NWB data with practical examples: 1) Uses DandiAPIClient to list available assets, 2) Uses LindiH5pyFile for remote access, 3) Loads and accesses basic metadata (subject info, session description), 4) Successfully accesses acquisition data ('Movies') and demonstrates working with its properties (frame rate, dimensions), 5) Shows how to access and visualize the actual imaging data. However, it doesn't explore more complex data structures or demonstrate advanced techniques for handling different data types that might be present in NWB files.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates successful loading of NWB data through multiple steps: 1) Uses DandiAPIClient to list available assets, 2) Uses LindiH5pyFile for remote access, 3) Opens the NWB file using pynwb.NWBHDF5IO, 4) Successfully accesses both metadata (subject info, session description) and acquisition data (Movies), 5) Properly handles the movie data array for visualization and analysis. However, it doesn't explore other potential data types in the NWB file or demonstrate advanced access patterns. The loading is functional but focused on a single data type.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates basic to intermediate NWB file loading capabilities. It successfully: 1) Uses DandiAPIClient to list available assets, 2) Uses LindiH5pyFile to remotely access the NWB file, 3) Loads basic metadata (session description, subject info), 4) Accesses acquisition data (Movies), and 5) Successfully extracts and works with the imaging data including shape, rate, and actual frames. However, it doesn't explore other potential data types in the file, doesn't show handling of different data structures, and doesn't demonstrate advanced access techniques or error handling.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates good visualization capabilities for NWB data with multiple visualization types: 1) A single frame from the vessel imaging data with proper axes, colorbar, and labels, and 2) A time series plot of ROI intensity with appropriate axes, grid, and legend. The visualizations are clear and well-labeled, showing understanding of the data structure. However, it falls short of publication quality as it lacks error bars, statistical analysis, and more sophisticated visualization techniques. The code is well-documented with explanatory markdown cells, but could benefit from more advanced visualization techniques like interactive plots or multi-panel comparisons.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates clear visualization of NWB data with:\n    - Successfully loads and displays vessel imaging data\n    - Creates two distinct visualizations (sample frame and time series)\n    - Uses proper formatting including titles, axes labels, and colorbars\n    - Includes clear explanatory markdown about what is being visualized\n    - Shows simple time series analysis of ROI intensity\n    However, it lacks:\n    - More sophisticated visualization techniques\n    - Multiple data types (focuses only on imaging)\n    - Publication-level polish\n    - Interactive elements or advanced plotting features",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates solid visualization capabilities for NWB data with multiple visualizations: 1) A well-labeled frame from vessel imaging data with colorbar and proper axis labels, and 2) A time series plot showing ROI intensity over time with appropriate axes, grid, and legend. The code successfully loads and accesses NWB data, handles the visualization properly, and includes clear formatting and labels. However, it doesn't reach publication quality (lacking error bars, statistical analysis, or sophisticated multi-panel figures) and focuses mainly on basic imaging data rather than showing multiple data types from the NWB file. The visualizations are functional and well-documented but not particularly advanced.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 7.666666666666667,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook contains two plots: a vessel imaging visualization and a time series plot. Both plots have appropriate axis labels, titles, and units. The vessel image includes a colorbar with label. The time series plot includes a grid, legend, and clear formatting. However, they lack some elements that would make them fully publication-ready, such as standardized font sizes, optimized figure sizes for publication, multiple panel layouts, or detailed caption-level descriptions. The plots are well-formatted and professional but could be enhanced further for publication purposes.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook contains two plots: a vessel imaging frame and a time series plot. Both plots have proper axis labels, titles, and appropriate sizing. The vessel image includes a colorbar with label, and the time series plot has a grid, legend, and clear units. However, they lack some elements that would make them truly publication-ready, such as standardized font sizes, subplot labels (a, b, etc.), or detailed captions. The plots are well-formatted and professional but could be enhanced further for publication standards.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook contains two plots: a vessel imaging frame and a time series plot. Both plots include essential elements like titles, axis labels, and appropriate sizing. The vessel image includes a colorbar with label, while the time series plot has a grid, legend, and clear line formatting. However, they fall short of publication quality as they lack elements like: font size specifications, detailed subplot spacing, professional color schemes, or comprehensive figure captions. The plots are functional and well-formatted for analysis purposes but would need refinement for publication.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 3.0,
+            "reps": [
+                {
+                    "score": 3.0,
+                    "thinking": "The notebook contains exactly 2 plots: 1) A visualization of a sample frame from the vessel imaging data using imshow() with a colorbar, and 2) A time series plot showing ROI intensity over time. Both plots are relevant and effective for the analysis, with proper labels, titles, and axes. However, this is a basic number of visualizations for the dataset's potential.",
+                    "repnum": 0
+                },
+                {
+                    "score": 3.0,
+                    "thinking": "The notebook contains exactly two plots: 1) A visualization of a sample frame from the vessel imaging data using imshow() with a colorbar, showing the vessel structure, and 2) A time series plot showing ROI intensity over time. Both plots are effective and serve different analytical purposes - one for spatial visualization and one for temporal analysis. While the plots are well-constructed and informative, the total number corresponds to \"Two basic plots\" in the rubric.",
+                    "repnum": 1
+                },
+                {
+                    "score": 3.0,
+                    "thinking": "The notebook contains exactly two plots: 1) A grayscale image visualization of a sample frame from vessel imaging data with a colorbar showing pixel intensity, and 2) A time series plot showing ROI intensity over time. Both plots are effective and serve different purposes - one for spatial visualization and one for temporal analysis. The plots are well-labeled with appropriate titles, axes labels, and necessary visual elements.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}

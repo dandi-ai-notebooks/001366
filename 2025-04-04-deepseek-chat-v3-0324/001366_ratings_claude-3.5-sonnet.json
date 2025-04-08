@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 9.333333333333334,
+            "reps": [
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of Dandiset 001366 including: 1) Full title \"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\", 2) Dataset purpose focused on pial vessels in mice for diameter and pulsatility measurement, 3) Key metadata including species (mouse), institution (University of Copenhagen), and license (CC-BY-4.0), 4) Technical details about data format (16-bit grayscale movies at 54.47Hz), 5) Data organization showing 2 NWB files with their sizes, and 6) Clear description of the subject data/experimental setup through session description. The description is comprehensive, clear and well-organized.",
+                    "repnum": 0
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook provides a thorough description of Dandiset 001366 including: 1) Full title \"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\", 2) Key metadata (species, experiment type, institution, license), 3) Details about the data content (16-bit grayscale movies of pial vessels at ~54.47Hz), 4) File structure (shows 2 NWB files with sizes), and 5) Purpose (vessel diameter and pulsatility measurement). The description gives readers a clear understanding of what the dataset contains and how it's organized. However, it doesn't go into exhaustive detail about the experimental protocol or complete data organization structure.",
+                    "repnum": 1
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook provides a comprehensive description of Dandiset 001366, including: 1) Full title \"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\", 2) Key metadata (species, experiment type, institution, license), 3) Data format details (16-bit grayscale movies at 54.47Hz), 4) Asset structure (shows 2 NWB files with sizes), 5) Purpose (studying pial vessels in mice for diameter and pulsatility measurement), and 6) Basic data organization. The description is clear and well-structured, providing all essential information needed to understand the dataset's content and purpose.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 7.333333333333333,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates successful loading of the Dandiset using DandiAPIClient and shows key metadata including: 1) listing all assets with sizes, 2) session description, 3) subject ID, 4) frame rate, and 5) data dimensions. It provides context through markdown cells explaining what the dataset contains (species, experiment type, institution, license). However, it doesn't explore all possible metadata fields or provide detailed descriptions of each field's meaning. The exploration is focused on the core metadata needed for basic understanding.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully loads the dandiset using DandiAPIClient and displays key information about the assets including their paths and sizes. It then loads an NWB file and shows essential metadata like session description, subject ID, and frame rate. The code executes properly and includes basic explanations. However, it doesn't explore all possible metadata fields or provide comprehensive descriptions of what each field represents. The focus is more on the data itself than exhaustive metadata exploration.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates solid metadata exploration: it uses DandiAPIClient to list assets with sizes, loads NWB file contents showing session description, subject ID, and frame rate, and explores data structure (movie dimensions and duration). However, it doesn't exhaustively explore all available metadata fields or provide detailed field descriptions. The code executes successfully with only minor warning messages that don't affect functionality.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 6.333333333333333,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully demonstrates basic asset handling: it uses DandiAPIClient to list available assets in the Dandiset (showing 2 assets with their paths and sizes), and then loads one specific NWB file using lindi and pynwb. It accesses basic metadata like session description, subject ID, and frame rate. However, it doesn't explore multiple asset types or provide comprehensive metadata exploration. While the asset loading works correctly, it covers only basic functionality.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates basic asset handling: it successfully uses DandiAPIClient to list available assets (showing path and size for 2 assets), and then loads one specific NWB file using lindi and pynwb. It accesses basic metadata like session description, subject ID, and frame rate. However, it doesn't explore multiple asset types or provide comprehensive metadata exploration. While functional, it covers only basic asset handling capabilities.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates loading capabilities in multiple steps: 1) Uses DandiAPIClient to list and display available assets with their sizes, 2) Successfully loads a specific NWB file using lindi and pynwb, 3) Accesses basic metadata like session description, subject ID, and frame rate, 4) Successfully loads and displays actual movie data from the asset. However, it doesn't explore multiple asset types (works only with movies) or show comprehensive metadata exploration. The code runs successfully with only minor warnings.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully demonstrates loading an NWB file using pynwb and accessing basic components. It shows how to access and display fundamental information like session description, subject ID, and acquisition data (Movies). It also demonstrates practical usage by accessing and visualizing the movie data. However, it doesn't deeply explore other potential NWB structures (like processing modules, intervals, or time series) or show detailed navigation of the NWB hierarchy. The coverage is good for basic usage but not comprehensive.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file using pynwb and demonstrates accessing basic components like session description, subject ID, and acquisition data (Movies). It shows how to read both metadata and actual data (movie frames). However, it doesn't explore multiple NWB data structures beyond acquisitions, and doesn't show detailed navigation of the full NWB hierarchy or comprehensive exploration of other potential components (like processing modules, epochs, or time series). The code runs successfully with only minor warning messages.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully demonstrates loading an NWB file using pynwb and shows how to access basic components like session description, subject ID, and acquisition data (Movies). It also extracts and displays movie data dimensions and frame rate. However, it doesn't explore multiple data structures beyond the Movies acquisition, doesn't show detailed navigation of the NWB hierarchy, and doesn't demonstrate access to other potential components like processing modules, intervals, or time series data.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully demonstrates loading NWB files using both pynwb and lindi packages. It shows how to:\n    1. Access basic metadata (session description, subject ID)\n    2. Load and access acquisition data (Movies)\n    3. Extract specific properties (frame rate)\n    4. Handle the data array (showing shape, duration)\n    5. Visualize the loaded data\n    \n    However, it doesn't explore other data types that might be in the NWB file, doesn't show advanced querying techniques, and focuses only on the Movies acquisition. While the implementation is solid, it's not comprehensive in showing the full range of NWB data handling capabilities.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates basic to intermediate NWB file loading capabilities. It successfully:\n    - Uses pynwb to load the NWB file\n    - Accesses basic metadata (session description, subject ID)\n    - Loads and displays movie acquisition data\n    - Shows how to access specific data elements (Movies acquisition)\n    - Demonstrates working with the loaded data (shape, frame rate)\n    However, it doesn't:\n    - Show handling of multiple data types\n    - Explore complex data structures\n    - Demonstrate advanced access techniques\n    The notebook focuses mainly on movie data and basic metadata.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook demonstrates successful loading of NWB data with basic functionality. It uses pynwb and lindi to load the file, accesses the Movies acquisition, and successfully retrieves basic metadata (session description, subject ID, frame rate) and movie data arrays. The code runs with only minor warning messages. However, while it successfully loads and displays the movie data, it doesn't explore other data types or demonstrate more complex data structures within the NWB file. The notebook shows basic data access but doesn't demonstrate advanced techniques or comprehensive handling of multiple data types.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 5.0,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook successfully loads an NWB file and creates a basic visualization of the movie data showing 5 sample frames across time. The visualization includes proper use of matplotlib, grayscale colormap, and basic formatting (subplot titles, axis removal). However, it only shows one type of visualization (movie frames), lacks comprehensive labels (e.g., colorbars, scale bars), and doesn't explore other data types in the NWB file. The visualization is functional but relatively basic.",
+                    "repnum": 0
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook successfully loads NWB data and creates a basic visualization of movie frames using matplotlib. It shows 5 sample frames in a figure with appropriate sizing (15,3), grayscale colormap, and basic titles. The code includes proper setup with imports, loads the data correctly, and displays relevant metadata (shape, duration, frame rate). However, it only shows one type of visualization (image frames), lacks detailed axis labels or colorbars, and doesn't explore other potential visualizations of the data (like time series or vessel measurements). The visualization is functional but basic, without advanced formatting or multiple visualization types.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook successfully loads NWB data and creates a basic visualization of movie frames using matplotlib. It shows 5 sample frames from the recording in a subplot arrangement with proper grayscale colormap. The visualization includes basic formatting (titles, axis removal) and uses tight_layout for better presentation. However, it only shows one type of visualization (movie frames) and lacks additional features like colorbars, scale bars, or more sophisticated plotting techniques. The code is functional and produces clear output, but the visualization is relatively basic.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook contains one visualization showing 5 sample frames from the movie data. The plot uses a figure with proper sizing (15x3), displays grayscale images appropriately, and includes basic frame number labels. However, it lacks axis labels, colorbars, and detailed annotations. The subplot layout is well-organized with tight_layout() applied, and the frames are clearly visible. While functional and readable, it falls short of publication quality due to missing elements that would provide full context for the data being shown.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook contains one visualization showing 5 sample frames from the movie data. The plots are arranged in a clear 1x5 grid with appropriate sizing (15x3 figure size). Each frame is displayed using a grayscale colormap which is suitable for the data type. The plots include simple frame number titles and have their axes removed for cleaner visualization. However, the plots lack axis labels, colorbars to indicate intensity scale, and any detailed annotations. The layout is properly adjusted using tight_layout(). While functional and readable, the plots miss elements that would make them publication-ready.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook contains a visualization of sample frames from the movie data. The plot shows 5 frames in a horizontal arrangement with a reasonable figure size (15x3). Basic formatting is present: each subplot has a simple title indicating the frame number, uses an appropriate grayscale colormap for the image data, and has axes turned off which is suitable for image display. However, the plot lacks additional context such as a colorbar, scale bar, or any axis labels. The overall layout is clean with plt.tight_layout() applied, but it misses elements that would make it publication-ready, such as subplot labels (a,b,c...), detailed captions, or annotations highlighting features of interest.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 2.0,
+            "reps": [
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook contains only one visualization section which shows 5 subplots in a single figure. These subplots display sample frames from the movie data at different time points using imshow(). While these subplots are related and show the temporal progression of the data, they essentially represent the same type of visualization (grayscale images) from the same data source. Since these are part of a single figure and show the same type of data visualization, this would be considered a single basic plot.",
+                    "repnum": 0
+                },
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook contains only one set of plots showing 5 sample frames from the vessel movie data, displayed in a single figure with 5 subplots. While these subplots effectively show the vessel imagery at different time points using grayscale visualization, they are essentially the same type of plot (image visualization) showing similar data. No other visualization types (like line plots, histograms, etc.) are included.",
+                    "repnum": 1
+                },
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook contains only one visualization section that shows 5 sample frames from the movie data in a single figure (subplot with 5 panels). While these subplots effectively show the vessel imagery at different time points, they are all of the same type (grayscale images) and are part of a single visualization command. There are no other types of plots (like line plots, histograms, etc.) to show different aspects of the data. This counts as a single basic plot with multiple panels.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}
