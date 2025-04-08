@@ -1,0 +1,17 @@
+{
+  "dandi_notebook_gen_version": "0.1.0",
+  "system_info": {
+    "platform": "Linux-5.10.234-225.910.amzn2.x86_64-x86_64-with-glibc2.39",
+    "hostname": "jupyter-magland",
+    "processor": "x86_64",
+    "python_version": "3.11.10"
+  },
+  "model": "deepseek/deepseek-chat-v3-0324",
+  "vision_model": "deepseek/deepseek-chat-v3-0324",
+  "total_prompt_tokens": 112759,
+  "total_completion_tokens": 2548,
+  "total_vision_prompt_tokens": 104,
+  "total_vision_completion_tokens": 169,
+  "timestamp": "2025-04-04 12:53:17",
+  "elapsed_time_seconds": 190.70566868782043
+}

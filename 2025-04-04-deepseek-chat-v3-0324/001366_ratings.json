@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 9.333333333333334,
+            "reps": [
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook provides the Dandiset title (\"Comparison of Approaches for Surface Vessel Diameter and Pulsatility Quantification\"), ID (001366), purpose (vessel diameter and pulsatility quantification), contents (movies of pial vessels in mice), and key metadata fields (species, experiment, institution, license). The notebook provides a comprehensive description of the dandiset and its contents, including the type of data, experimental setup, and relevant metadata.",
+                    "repnum": 0
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides the Dandiset ID, title, purpose, content, and key metadata fields (species, experiment, institution, license), and overall content and structure. It's a comprehensive description of the dandiset. It includes the ID, title, purpose, contents, and data organization, thereby earning a score of 10.",
+                    "repnum": 1
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook provides the Dandiset ID (\"001366\"), the title (which is implicitly given by the name of the notebook as well as mentioned in text), the purpose (vessel diameter and pulsatility quantification), contents (movies of pial vessels in mice), and key metadata fields (species, experiment, institution, license). Therefore, it constitutes a detailed description including the stated aspects.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 6.666666666666667,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully loads the Dandiset using the DandiAPIClient and displays the Dandiset ID (\"001366\"). It then retrieves and prints a list of assets within the Dandiset, including their paths and sizes. The notebook does not explore all metadata fields, but it successfully loads and displays some basic information related to the Dandiset and its assets. The description provides some metadata but it's in markdown, extracted from the source dandiset description, not programmatically. The notebook loads and prints basic properties from the NWB file, namely session description, subject ID, and frame rate.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully loads the Dandiset using the DandiAPIClient and retrieves basic information such as Dandiset ID and asset paths/sizes. It then proceeds to load an NWB file (an asset within the Dandiset) and displays metadata related to the session and subject. The loading and exploration of Dandiset assets and basic metadata earns this notebook a score of 7. No field descriptions were included and not all key fields were worked with, so it is less than 10.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook loads the Dandiset and retrieves its assets. It then loads basic metadata like session description and subject ID from an NWB file within the Dandiset. The code executes without significant errors. Therefore, the notebook demonstrates loading and displaying basic metadata fields. Considering the notebook description I will mark the score as 6.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 4.0,
+            "reps": [
+                {
+                    "score": 4.0,
+                    "thinking": "The notebook starts by loading assets from the dandiset, printing the contents using a loop, and indicating the file sizes. It successfully lists the assets in the Dandiset.",
+                    "repnum": 0
+                },
+                {
+                    "score": 3.0,
+                    "thinking": "The notebook demonstrates how to download the initial information about the dataset (the list of files) from the server and provides the name of the first file in the list (in the next cell). It then goes on to show how to access a file using the dataregister. Therefore, the correct score is 3.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook successfully lists available assets using the DandiAPIClient. It loads the NWB file from the asset and prints its metadata. This earns a score of 5.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file using lindi and pynwb. It then prints the session description, subject ID, and frame rate. Finally, it loads and plots sample frames from the movie acquisition, demonstrating that it can access and visualize the image data. This shows that basic NWB components can be accessed.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file using lindi and pynwb, then demonstrates how to access basic information like session description, subject ID, and frame rate. It also shows how to get the movie data and its shape, plots sample frames from the movie. Thus, it demonstrates accessing basic NWB components.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file, displays its session description, subject ID, and frame rate. It also visualizes sample frames from the movie acquisition and discusses potential analyses such as vessel diameter quantification and pulsatility index calculation. The code opens the NWB and displays some basic components.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 6.666666666666667,
+            "reps": [
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates loading data from an NWB file in the Dandiset. It includes code for installing necessary packages, downloading an NWB file, and then loading the data using pynwb. It showcases how to access multiple data elements by looping through available trials and analyzing specific data streams such as electrical series. The notebook also correctly handles metadata associated with the experiment and contains specific examples of loading different data types. A few issues are caused by relative paths, but if you create a folder in the same directory it successfully loads the data. Because of this I rated this as a 9.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads and explores data from an NWB file.It demonstrates how to load specific data like session description, subject ID, frame rate and movie data. It iterates through the 'Movies' acquisition, prints the shape and total duration, and visualizes sample frames. It handles the data types appropriately by displaying the frames using a grayscale colormap. In terms of level of difficulty, the notebook uses simple methods: loading data with lindi and displaying NWB data.\n    Thus, the notebook succeeds in loading basic data arrays from an NWB file, demonstrating specific data loading and accessing data elements.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook loads a dataset from a Dandiset, specifies the URL, and loads the NWB file. It accesses basic information such as session description, subject ID, and frame rate and visualizes sample frames. This demonstrates loading basic data and specific data types related to the movie acquisition. Therefore, the score should be 5.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 5.333333333333333,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook loads data from an NWB file and visualizes sample frames from the movie acquisition. The plots are labeled with titles and axes are turned off to provide a cleaner visualization. The visualization is basic but functional and clear. Therefore, it meets the criteria for a score of 5.",
+                    "repnum": 0
+                },
+                {
+                    "score": 4.0,
+                    "thinking": "The notebook effectively demonstrates basic visualization of movie data from the NWB file. It loads the NWB file, extracts the movie data, and displays sample frames. The plots are simple but understandable, with titles and axes hidden. There is no advanced visualization or interactive plots, or any other data extracted to produce visualizations. No cropping or any type of image pre-processing. Therefore, a score 4.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook provides a brief overview of the NWB structure and then shows visualization examples of:\n1. Electrode Locations \n2. Timeseries \n3. Spike Times.\n\nThe code is generally well-structured with proper labeling and formatting. However, it doesn't explore advanced visualization techniques or different data types to merit a higher score.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 5.666666666666667,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook includes a figure with 5 subplots, each displaying a grayscale frame from the movie. The axes are turned off, the colormap is appropriate, titles are present displaying the index of each frame, and the overall layout is neat due to plt.tight_layout(). There are no axis labels, but the title is sufficient to understand plot. There is minimal formatting beyond this. The formatting and clarity permit readability, but aren't extensive.\n\nTherefore the plot quality aligns with a score of 6. The plot is clear and adequately formatted for its purpose, although there is room for improvement (i.e. figure title or axis labels with units).",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook contains a plot displaying sample frames from the movie. The plot has appropriate axis labels (\"Frame idx\"). The subplot titles clarify which frame is displayed. The plot is easily readable. Thus, the plot are clear and contain basic labels. As for formatting, the tight_layout function was used which improves the plot.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains readable plots with basic labels, axes labels are missing. There are no clear formatting issues but the presence of axes labels would enhance interpretability.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 3.6666666666666665,
+            "reps": [
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook includes a single plot composed of 5 subplots. Each subplot shows a different frame of the movie showing pial vessels. Although there are 5 subplots, they all show a similar type of data. Thus, the notebook has one effective plot.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook contains one set of five subplots visualizing five frames of the vessel movie data. These frames provide a good sense of the visual data contained in the NWB file. Therefore, this can be considered five effective plots since they are different frames.\nGiven the rubric levels regarding effective plots, this notebook rates as 7.",
+                    "repnum": 1
+                },
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook includes only one effective plot, visualizing sample frames from the movie. Therefore, the notebook contains a single basic plot.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 7.666666666666667,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook provides the Dandiset ID and title, and gives a brief overview of the content, mainly movies of pial vessels of mice used in experiments aimed at vessel diameter and pulsatility quantification. Also, keywords, license, and citation are provided. Therefore, the notebook achieves level 5.",
+                    "repnum": 0
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook provides the Dandiset ID, title, a brief description of the contents (movies of pial vessels), keywords, license, and citation. It also lists the assets within the Dandiset and loads one of the NWB files. It then accesses and visualizes the imaging movie data and provides an example analysis. Therefore, the notebook provides a comprehensive description of the Dandiset and its contents. The notebook describes the purpose, contents and basic metadata. It does not provide extensive detail of the structure beyond what is extracted to visualize, e.g. that the imaging movies are located in the acquisition section of the NWB file.",
+                    "repnum": 1
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook includes the Dandiset ID and title in the initial markdown cell. It also provides a concise description of the Dandiset contents (movies of pial vessel of mice) and keywords. The notebook loads data from a specific asset in the Dandiset and explores the contents and metadata, thereby describing the Dandiset's structure and content. Therefore, a score of 9 is appropriate.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully loads and displays several key metadata fields from the Dandiset, including session description, identifier, session start time, experiment description, experimenter, institution, subject ID, species, sex, and age. It uses the DANDI API to get and display the Dandiset's assets. This demonstrates a good level of metadata exploration.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook loads the Dandiset using the DandiAPIClient and retrieves assets. It then loads a specific NWB file associated with the Dandiset. After loading the NWB file, the notebook extracts and prints several metadata fields such as session description, identifier, session start time, experiment description, experimenter, institution, subject ID, subject species, subject sex, and subject age. So the notebook does more than loading minimal metadata, but also explores multiple metadata fields.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully uses the DANDI API to load the Dandiset and accesses several metadata fields such as session description, identifier, start time, experiment details, experimenters, institution, and subject information (ID, species, sex, age). This demonstrates successful loading and exploration of multiple metadata fields. Therefore, the notebook deserves a score of 7.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully lists the available assets using the DANDI API. It then proceeds to load one of the NWB files, access its metadata such as session description, subject ID, and experimenter, and also loads and visualizes imaging data from it. Therefore, the notebook demonstrates loading assets, accessing their metadata and providing an example of their usage.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates how to list all assets in the Dandiset, loads a specific NWB file, and accesses metadata such as session description, identifier, experiment description, subject information, etc. Therefore, it loads basic asset information, demonstrates loading specific assets and shows how to access asset metadata.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully lists the assets of the Dandiset and demonstrates loading a specific NWB file, accessing its metadata such as session description, identifier, start time, experiment details, experimenter, institution, subject ID, species, sex, and age. Therefore, the notebook demonstrates loading specific assets and shows how to access asset metadata.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file from the Dandiset using the Lindi URL. It then accesses and prints basic metadata about the session, subject, and experiment, demonstrating the ability to access `session_description`, `identifier`, `session_start_time`, `experiment_description`, `experimenter`, `institution`, and subject information. It effectively demonstrates accessing basic NWB components, going beyond just opening the file and showing NWB file structure.",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file from the Dandiset, prints metadata about the session/experiment, and accesses imaging movie data. The notebook effectively demonstrates accessing basic NWB components. It does not navigate the hierarchy in great detail but it does show how to get key information and data from the NWB file. The notebook loads the data, prints some metadata, and extracts imaging data, so it gets score of 6.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file from the Dandiset using a Lindi URL. It then proceeds to access and print basic metadata such as session description, identifier, start time, experiment details, subject information (ID, species, sex, age), and loads imaging movie data. It also calculates and visualizes the mean vessel intensity over time, demonstrating access to different NWB components. Therefore, the notebook demonstrates accessing basic NWB components.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 5.666666666666667,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook loads an NWB file from a Lindi URL and accesses attributes, such as session description, subject ID, etc. It also accesses image data, extracts a subset of frames and computes the mean. This demonstrates accessing specific data types such as strings and imaging data. However, it doesn't explore more complex data structures that might be present in the NWB file beyond basic access. The notebook does demonstrate how to access a specific data type (imaging movie) and performs a basic operation (mean calculation), and it shows how to load different types of metadata. It could be improved by showcasing handling of more diversity in data. A 6 seems appropriate as it shows how to access multiple data elements from the file.",
+                    "repnum": 0
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook successfully loads an NWB file from a Dandiset using a Lindi streaming URL, and then proceeds to access and print metadata information such as session description, identifier, session start time, experiment description, etc. It loads the imaging movie data as a numpy array. The notebook demonstrates loading basic data arrays and accessing metadata, implying a successful connection and loading from the NWB file in the Dandiset. The notebook also demonstrates accessing the `Movies` acquisition to extract imaging data.\nHowever, it only shows how to access one particular data type (imaging movies) and could benefit from showcasing the loading of other data modalities or elements within the NWB file to further exemplify data handling. It does not handle different data types or explore complex data structures appropriately. The analysis is also quite simple, averaging over all pixels in each frame. Therefore, I think a score of 5 is appropriate.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook successfully loads an NWB file from a DANDI API client, and then accesses various metadata fields, as well as image data. The NWB file is accessed via a Lindi streaming URL. The notebook displays metadata such as session description, identifier, session start time, experiment description, experimenters, institution, subject ID, species, sex, and age. The notebook accesses and visualizes imaging data by loading a subset of frames and computes a mean projection and displays individual frames. In summary, the notebook loads the imaging data and some metadata successfully. No sophisticated data selection is performed so it is above basic loading of data arrays but not quite demonstrating advanced data access techniques for complex data structure. It also visualizes the data making it more helpful, so I will give it a score of 6.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully loads an NWB file from a DANDI API and visualizes a subset of the imaging movie data. It generates a mean projection and an example frame, showing the vessel structure and image quality. It also computes mean intensity per frame and plots it. The visualizations are simple but informative. The plots are labeled and visually clear. Thus, the notebook adequately demonstrates how to visualize data from an NWB file within the context of a Dandiset, covering basic visualization techniques. It could be improved by showing more advanced techniques and visualizing multiple data types comprehensively. However, it achieves a decent level of demonstration. The notebook also saves the plots to the disk which is a good feature. Thus, the code is well-written and informative.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook effectively demonstrates how to load and visualize data from an NWB file in a Dandiset. It includes the following key aspects:\n\n*   **Loading NWB file:** The notebook shows the proper way to load an NWB file using lindi and pynwb.\n*   **Metadata Access:** The notebook extracts and displays important metadata, providing context.\n*   **Imaging Movie Visualization:** Generates and displays the mean projection and an example frame from the imaging movie data.\n*   **Basic Analysis Visualization:** Plots the mean vessel intensity over time.\n\nThe visualizations are basic but functional, with proper labeling and titles. Therefore, a score of 7 is most appropriate.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates how to load an NWB file from a DANDI API, access imaging movie data, and visualize it. It generates a mean projection of the first 100 frames and displays an example single frame. Additionally, it plots the mean vessel intensity over time. The plot labels and titles are present. The analysis is basic, but good enough to get a score of 7 for clear labeling and visualizations.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 5.666666666666667,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook produces three plots. The plots are readable with basic labels and axes. The title is present and understandable. The formatting of the label is good and easy to understand.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook provides three plots. All plots are readable with appropriate labels for axes and titles. The formatting is basic but sufficient for understanding the data. The plots are clear and well-structured for their purpose to show mean projection, example frame, and mean vessel intensity. While not publication quality, they are well-presented and easy to interpret.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The plots are readable with basic labels (titles, x and y axis). The plots are adequate for conveying the information. There could be some more detailed information, like units on the axis. There are no major formatting issues",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 5.0,
+            "reps": [
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook includes a demonstration of how to (1) calculate the mean projection of vessel images, (2) show a single frame of vessel image, and (3) show the mean vessel intensity over time. All three include effective plots. Therefore, my score is a 5.",
+                    "repnum": 0
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook contains three plots: a mean projection of the first 100 frames, an example single frame, and a plot of mean vessel intensity over time. Each plot presents a different aspect of the data, which corresponds to a score of 5.",
+                    "repnum": 1
+                },
+                {
+                    "score": 5.0,
+                    "thinking": "The notebook utilizes three effective plots. There's a mean projection, a single frame example, and a plot displaying mean vessel intensity changes over time. Each of these gives a different view of the data and provides some basic visual insights.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}
