@@ -1,0 +1,10 @@
+{
+  "model": "anthropic/claude-3.7-sonnet",
+  "vision_model": "anthropic/claude-3.7-sonnet",
+  "total_prompt_tokens": 1709997,
+  "total_completion_tokens": 24869,
+  "total_vision_prompt_tokens": 15953,
+  "total_vision_completion_tokens": 3098,
+  "timestamp": "2025-04-09 23:15:15",
+  "elapsed_time_seconds": 1062.3269627094269
+}
