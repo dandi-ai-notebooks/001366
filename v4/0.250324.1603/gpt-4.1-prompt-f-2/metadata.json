@@ -1,0 +1,18 @@
+{
+  "dandiset_id": "001366",
+  "version": "0.250324.1603",
+  "model": "openai/gpt-4.1",
+  "prompt": "prompt-f-2.txt",
+  "total_prompt_tokens": 211576,
+  "total_completion_tokens": 6171,
+  "total_vision_prompt_tokens": 1424,
+  "total_vision_completion_tokens": 270,
+  "elapsed_time_seconds": 343.7861063480377,
+  "timestamp": "2025-05-09 15:21:37",
+  "system_info": {
+    "platform": "Linux-6.8.0-59-generic-x86_64-with-glibc2.35",
+    "hostname": "system76-pc",
+    "processor": "x86_64",
+    "python_version": "3.12.2"
+  }
+}

@@ -19,28 +19,22 @@ acquisition = nwb.acquisition
 Movies = acquisition["Movies"]
 movie_data = Movies.data # This is a h5py.Dataset
 
-# Define the region of interest (ROI) [y_start:y_end, x_start:x_end]
-roi = (slice(250, 350), slice(250, 350))
+# Define the pixel coordinate to track (row, column)
+pixel_coord = (300, 300)
 
-# Extract data for the ROI across a subset of frames
-# Load only the data for the specified ROI for a limited number of time points
+# Extract pixel intensity for a subset of frames
+# Load only the data for the specified pixel for a limited number of time points
 num_frames_to_load = 1000
-roi_data_over_time = movie_data[:num_frames_to_load, roi[0], roi[1]]
+pixel_intensity_over_time = movie_data[:num_frames_to_load, pixel_coord[0], pixel_coord[1]]
 
-# Calculate the average intensity for each frame within the ROI
-average_intensity = np.mean(roi_data_over_time, axis=(1, 2))
-
-# Get timestamps for the subset of frames (optional, using frame index as time for simplicity here)
-# timestamps = Movies.starting_time + np.arange(num_frames_to_load) * (1.0 / Movies.rate)
-
-# Plot average intensity over time
+# Plot pixel intensity over time
 plt.figure(figsize=(12, 6))
-plt.plot(average_intensity)
+plt.plot(pixel_intensity_over_time)
 plt.xlabel('Frame Index')
-plt.ylabel('Average Pixel Intensity (uint16)')
-plt.title(f'Average Pixel Intensity in ROI Over Time (First {num_frames_to_load} Frames)')
+plt.ylabel('Pixel Intensity (uint16)')
+plt.title(f'Pixel Intensity at ({pixel_coord[0]}, {pixel_coord[1]}) Over Time (First {num_frames_to_load} Frames)')
 plt.grid(True)
-plt.savefig('explore/average_intensity_over_time.png')
+plt.savefig('explore/pixel_intensity_over_time.png')
 plt.close()
 
 io.close() # Close the NWB file after reading
